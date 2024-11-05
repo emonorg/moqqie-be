@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+  <head>
+    <style type="text/css" data-dm-component-uuid="EF5E992D-F639-4E86-A49D-7C82E3BDE853">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        border: 0;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body,
+      #lego-body-table,
+      #lego-body-td {
+        height: 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      #lego-body-background-color {
+        background-color: #f5f5f5;
+      }
+      .section-wrapper {
+        width: 100%;
+        min-width: 100%;
+      }
+      .section-background {
+        width: 630px;
+        min-width: 630px;
+      }
+      .section-background.full-width {
+        width: 100%;
+        min-width: 100%;
+      }
+      .section-content {
+        width: 630px;
+        min-width: 630px;
+      }
+      .section-border {
+        table-layout: fixed;
+        width: 630px;
+        min-width: 630px;
+      }
+      .section-background.full-width .section-border {
+        width: 100%;
+        min-width: 100%;
+      }
+      .column .section-content {
+        width: 100%;
+        min-width: 100%;
+      }
+      .column-gutter {
+        width: 18px;
+        min-width: 18px;
+        line-height: 0px;
+        font-size: 0px;
+      }
+      .column.half {
+        width: 315px;
+        min-width: 315px;
+      }
+      .column.half.with-gutter {
+        width: 306px;
+        min-width: 306px;
+      }
+      .column.third {
+        width: 210px;
+        min-width: 210px;
+      }
+      .column.third.with-gutter {
+        width: 201px;
+        min-width: 201px;
+      }
+      .column.third.with-gutter.two-gutters {
+        width: 198px;
+        min-width: 198px;
+      }
+      .column.two-third {
+        width: 420px;
+        min-width: 420px;
+      }
+      .column.two-third.with-gutter {
+        width: 411px;
+        min-width: 411px;
+      }
+      .mobile-only {
+        display: none;
+      }
+      .desktop-only {
+        display: table;
+      }
+      @media only screen and (max-width: 480px) {
+        .section-background {
+          max-width: 630px !important;
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+        .section-content,
+        .section-border {
+          max-width: 630px !important;
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+        .column {
+          display: block !important;
+        }
+        .column-flow-bottom {
+          display: table-footer-group !important;
+        }
+        .column-flow-top {
+          display: table-header-group !important;
+        }
+        .column.half,
+        .column.half.with-gutter,
+        .column.third,
+        .column.third.with-gutter,
+        .column.two-third,
+        .column.two-third.with-gutter {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+        .column-gutter {
+          display: none !important;
+          width: 0 !important;
+          min-width: 0 !important;
+        }
+        .column.column-flow-normal.with-gutter.not-last-column > table,
+        .column.column-flow-top > table {
+          margin-bottom: 18px !important;
+        }
+        .mobile-only {
+          display: table !important;
+        }
+        .desktop-only {
+          display: none !important;
+        }
+      }
+      .dm-image-block img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .dm-image-block {
+        table-layout: fixed;
+      }
+      .dm-share-block-icon-label a {
+        text-decoration: none;
+      }
+      blockquote {
+        font-family: Helvetica-Oblique, Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        color: #000000;
+        line-height: 1.5;
+        letter-spacing: normal;
+        margin-top: 18px;
+        margin-bottom: 18px;
+      }
+      h2 {
+        font-family: Helvetica-Bold, Helvetica, Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.4;
+        letter-spacing: normal;
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+      p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.6;
+        letter-spacing: normal;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      td.dm-share-block-label {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        color: #52585f;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+      p.dm-header-footer {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        color: #52585f;
+        line-height: 1.5;
+        letter-spacing: normal;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      h3 {
+        font-family: Helvetica-Bold, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.4;
+        letter-spacing: normal;
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+      li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.6;
+        letter-spacing: normal;
+      }
+      h1 {
+        font-family: Helvetica-Bold, Helvetica, Arial, sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.3;
+        letter-spacing: normal;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p.dm-caption {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+        line-height: 1.5;
+        letter-spacing: normal;
+        margin-top: 9px;
+        margin-bottom: 9px;
+      }
+      td.dm-follow-block-label {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        color: #52585f;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+      blockquote {
+        margin-left: 18px;
+        margin-right: 18px;
+      }
+      .dm-text-block.no-paragraph-spacing h1,
+      .dm-text-block.no-paragraph-spacing h2,
+      .dm-text-block.no-paragraph-spacing h3,
+      .dm-text-block.no-paragraph-spacing p,
+      .dm-text-block.no-paragraph-spacing blockquote {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      a {
+        color: #0ea6d3;
+      }
+    </style>
+    <meta name="x-apple-disable-message-reformatting" />
+  </head>
+  <body data-dm-component-uuid="90055575-36D7-4FB7-A2E1-9F2BE5A203AD">
+    <div id="lego-body-background-color">
+      <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="lego-body-table">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" id="lego-body-td">
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="section-wrapper"
+                  data-dm-component-inner=""
+                  data-dm-component-uuid="CE9DAC69-76D0-4EF5-A7D5-D3F77CA17CC3"
+                >
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" class="section-background">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top" bgcolor="#f5f5f5" style="background-color: #f5f5f5">
+                                <table border="0" cellpadding="0" cellspacing="0" class="section-content">
+                                  <tbody>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="top"
+                                        data-dm-component-uuid="9066FA0C-09C1-40C6-B63D-13FCF5272A81"
+                                      >
+                                        <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="100%"
+                                          class="dm-image-block"
+                                          data-dm-component-uuid="90182869-40BC-4B0B-AD66-05C4CB754514"
+                                        >
+                                          <tbody>
+                                            <tr data-dm-component-inner="">
+                                              <td width="18" style="width: 18px; line-height: 0px; font-size: 0px"> </td>
+                                              <td valign="top" align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td height="18" style="height: 18px; line-height: 18px; font-size: 18px">
+                                                         
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!--[if !mso]><!-- -->
+                                                <img
+                                                  src="https://moqqie.com/images/logo/Logo.svg"
+                                                  border="0"
+                                                  width="60"
+                                                  height="60"
+                                                  alt=""
+                                                  data-dm-src-width-hint="60"
+                                                />
+                                                <!--<![endif]-->
+                                                <!--[if mso
+                                                  ]><img
+                                                    src="directmail-scsi://19295809-8405-465A-8323-82AF7AF12FE7?revision=907C2325-A1DE-4B76-96D8-42071808DD78"
+                                                    border="0"
+                                                    alt=""
+                                                    data-dm-src-width-hint="60"
+                                                    width="60"
+                                                    height="60"
+                                                /><![endif]-->
+                                              </td>
+                                              <td width="18" style="width: 18px; line-height: 0px; font-size: 0px"> </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="100%"
+                                          data-dm-component-inner=""
+                                          data-dm-component-uuid="C7D0C900-8540-4A13-A75F-F1FD24B8E483"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                              <td
+                                                valign="middle"
+                                                align="center"
+                                                height="40"
+                                                style="height: 40px; line-height: 40px; font-size: 40px"
+                                              >
+                                                <table
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="100%"
+                                                  bgcolor="#dddee1"
+                                                  style="background-color: #dddee1; min-width: 100%"
+                                                >
+                                                  <tbody>
+                                                    <tr>
+                                                      <td height="1" style="height: 1px; line-height: 1px; font-size: 1px"> </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="100%"
+                                          class="dm-text-block"
+                                          data-dm-component-uuid="7A989262-F2CB-43C3-81C2-938AA199F0B4"
+                                        >
+                                          <tbody>
+                                            <tr data-dm-component-inner="">
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                              <td valign="top" align="left" contenteditable="true">
+                                                <p>
+                                                  <span style="text-align: justify">Hello,</span>
+                                                </p>
+                                                <p>
+                                                  <span style="text-align: justify"
+                                                    >You have been invited to join {{organizationName}} organization on Moqqie.
+                                                    Click the button below to accept the invitation.</span
+                                                  >
+                                                </p>
+                                              </td>
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                            </tr>
+                                            <tr>
+                                              <td
+                                                height="20"
+                                                style="height: 20px; line-height: 20px; font-size: 20px"
+                                                colspan="3"
+                                              >
+                                                 
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <table
+                                          border="0"
+                                          cellpadding="1"
+                                          cellspacing="0"
+                                          width="100%"
+                                          data-dm-component-uuid="07B2ED55-07AD-4F8F-B7F5-9AF10E66F5CA"
+                                        >
+                                          <tbody>
+                                            <tr data-dm-component-inner="">
+                                              <td width="16" style="width: 16px; line-height: 0px; font-size: 0px"> </td>
+                                              <td valign="middle" align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" style="min-width: 100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" bgcolor="#00a2ff" style="border-radius: 7px">
+                                                        <a
+                                                          href="{{invitationAcceptLink}}"
+                                                          style="
+                                                            cursor: pointer;
+                                                            font-family: Helvetica-Bold, Helvetica, Arial, sans-serif;
+                                                            font-size: 22px;
+                                                            font-weight: bold;
+                                                            font-style: normal;
+                                                            color: #ffffff;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-decoration: none;
+                                                            border-radius: 7px;
+                                                            border: 2px solid #00a2ff;
+                                                            padding: 16px 33px;
+                                                            display: block;
+                                                          "
+                                                          >Accept invitation</a
+                                                        >
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                              <td width="16" style="width: 16px; line-height: 0px; font-size: 0px"> </td>
+                                            </tr>
+                                            <tr>
+                                              <td
+                                                height="20"
+                                                style="height: 20px; line-height: 20px; font-size: 20px"
+                                                colspan="3"
+                                              >
+                                                 
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="section-wrapper"
+                  data-dm-component-inner=""
+                  data-dm-component-uuid="65E83B05-F788-4219-BAFE-2C33BC343E16"
+                >
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" class="section-background">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top" bgcolor="#f5f5f5" style="background-color: #f5f5f5">
+                                <table border="0" cellpadding="0" cellspacing="0" class="section-content">
+                                  <tbody>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="top"
+                                        data-dm-component-uuid="01B67AC4-12E5-4537-BD46-F45955473C29"
+                                      >
+                                        <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="100%"
+                                          class="dm-text-block"
+                                          data-dm-component-uuid="7A9D2ABD-54C4-4ADF-AA38-C205C7FF8933"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                height="20"
+                                                style="height: 20px; line-height: 20px; font-size: 20px"
+                                                colspan="3"
+                                              >
+                                                 
+                                              </td>
+                                            </tr>
+                                            <tr data-dm-component-inner="">
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                              <td valign="top" align="left" contenteditable="true">
+                                                <p class="dm-header-footer">© Copyright 2024 Moqqie. moqqie.com</p>
+                                              </td>
+                                              <td width="20" style="width: 20px; line-height: 0px; font-size: 0px"> </td>
+                                            </tr>
+                                            <tr>
+                                              <td
+                                                height="20"
+                                                style="height: 20px; line-height: 20px; font-size: 20px"
+                                                colspan="3"
+                                              >
+                                                 
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+    </div>
+  </body>
+</html>

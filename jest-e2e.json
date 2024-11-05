@@ -1,0 +1,16 @@
+{
+  "forceExit": true,
+  "verbose": true,
+  "detectOpenHandles": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": ["src/**", "!**/*.entity.ts", "!**/*.dto.ts", "!**/*.interface.ts"],
+  "coverageDirectory": "test/coverage",
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "./",
+  "roots": ["src", "test"],
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleDirectories": ["<rootDir>", "node_modules"]
+}

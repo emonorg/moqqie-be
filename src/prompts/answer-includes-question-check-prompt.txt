@@ -1,0 +1,10 @@
+Check if the following sentence is:
+
+Asking a question
+Asking to move to the next question or skip the current question
+sentence: {{sentence}}
+
+If the sentence is asking a question, return "TRUE".
+If the sentence is asking to move to the next question or skip the current question, return "NEXT".
+If the sentence is neither asking a question nor asking to move to the next question, return "FALSE".
+The only response you can return is only of one: ["TRUE", "FALSE", "NEXT"]

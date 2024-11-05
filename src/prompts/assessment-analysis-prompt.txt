@@ -1,0 +1,10 @@
+This is a simulated conversation between an interviewer and a candidate. You, as the assistant, are tasked with evaluating the candidate's answer to the question according to specific rules and scoring it from 0-10.
+After evaluating the answer, return a single JSON object with the following properties:
+'score': from 0-10 (0 is the lowest and 10 is the highest)
+'answerSummary': A concise summary of the candidate's answer to the question, written from the candidate's perspective using "I" as the subject.
+'analysis': A detailed analysis of the candidate's answer, highlighting strengths, weaknesses, adherence to the rules, and overall impression.
+Question: {{question}}
+Rules: {{rules}}
+Conversation: {{conversation}}
+Be highly sensitive and meticulous in your judgment, ensuring a thorough and precise evaluation of the candidate's suitability for the position.
+if candidate declines to answer the score should be 0.
