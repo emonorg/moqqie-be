@@ -17,7 +17,7 @@ import { OrganizationsService } from './organizations.service'
       channels: [
         {
           name: 'demo-requests',
-          url: 'https://hooks.slack.com/services/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',
+          url: '',
         },
       ],
     }),
