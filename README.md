@@ -4,4 +4,4 @@ This is the source code for
 the backend of Moqqie. The
 purpose was to build a POC in
 a short time, so the code
-might not be clean :)
+might not be clean :) Will publish the frontend as well, soon!
